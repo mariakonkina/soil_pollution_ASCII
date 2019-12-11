@@ -34,9 +34,6 @@ data_import(api_key, data_url)
 #making data frame
 data_frame_making()
 
-soil_df <- soil_df %>%
-  filter(year == "2018")
-
 #adding google api key
 register_google(key = "AIzaSyDyp9clJ_Ii0LooFGs8l60-3GaONnn8_fI")
 

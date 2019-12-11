@@ -38,7 +38,7 @@ soil_df <- cbind(soil_df, clean_data_year)
 soil_df <- cbind(soil_df, clean_data_value)
 soil_df <- as.data.frame(soil_df)
 colnames(soil_df) <- c("lon", "lat", "level", "year", "value")
-soil_df <<- unfactor(soil_df)
-soil_df <- soil_df %>%
+soil_df <- unfactor(soil_df)
+soil_df <<- soil_df %>%
 filter(year == "2018")
 }

@@ -1,2 +1,2 @@
 source("main.R")
-soil_poll_plot
+show(soil_poll_plot)

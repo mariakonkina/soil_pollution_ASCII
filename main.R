@@ -34,16 +34,8 @@ data_import(api_key, data_url)
 #making data frame
 data_frame_making()
 
-soil_df <<- soil_df %>%
+soil_df <- soil_df %>%
   filter(year == "2018")
-
-write.table(soil_df,
-            file = "results/soil_df.csv",
-            sep = ",",
-            quote = FALSE,
-            row.names = F)
-
-soil_df_var <<- soil_df[soil_df$level %in% c("?????????????????????????????"), ]
 
 #adding google api key
 register_google(key = "AIzaSyDyp9clJ_Ii0LooFGs8l60-3GaONnn8_fI")
